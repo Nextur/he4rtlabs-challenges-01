@@ -1,15 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Calculadora de Freela - He4rtDevs</title>
-    <link rel="stylesheet" href="./main.css" />
-  </head>
-  <body>
-    <div>
-      <h1>Olá mundo.</h1>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculadora de Freela - He4rtDevs</title>
+  <link rel="stylesheet" href="./assets/css/main.css" />
+</head>
+
+<body>
+  <!--Começo do Menu-->
+  <header>
+    <div class="container">
+      <div class="logo">
+        <p> G A B R I E L <span> NX_</span> </p>
+      </div>
+      <div class="menu">
+        <nav>
+          <ul>
+            <li class="active"><a href="">Home</a></li>
+            <li><a href="https://github.com/Nextur/he4rtlabs-challenges-01" target="_blank">GITHUB</a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
-    <script src="./main.js"></script>
-  </body>
+  </header>
+
+  <!--Banner-->
+  <section>
+    <div class="container_body">
+      <div class="logo_body">
+        <a href=""><img src="./assets/images/vACPeL3.png" /></a>
+      </div>
+  </section>
+  <!--Começo do Conteúdo-->
+  <main>
+    <div class="cards">
+      <div class="card-1">
+        <div class="colorcard"></div>
+        <img src="./assets/images/tempo.png" class="icons" />
+        <h3>Tempo Diário Investido</h3>
+        <h4>Esse tempo é algo muito valioso para qualquer pessoa, certo?
+          Então claramente temos que levar esse fator em consideração.</h4>
+        <div class="form">
+          <input id="horasDiarias" type="text" name="name" placeholder="Horas" autocomplete="off" required
+            onkeypress="return apenasNumeros();" />
+        </div>
+      </div>
+      <div class="card-2">
+        <div class="colorcard"></div>
+        <img src="./assets/images/calendario.png" class="icons" />
+        <h3>Dias efetivos trabalhando</h3>
+        <h4>Outro fator é a quantidade de dias que você irá disponibilizar para trabalhar no projeto. Organize-os bem!
+        </h4>
+        <div class="form">
+          <input id="diasEfetivos" type="text" name="name" placeholder="Dias" autocomplete="off" required
+            onkeypress="return apenasNumeros();" />
+        </div>
+      </div>
+
+      <div class="card-3">
+        <div class="colorcard"></div>
+        <img src="./assets/images/ferias.png" class="icons" />
+        <h3>Dias de Férias por projeto</h3>
+        <h4>Uma parte do valor da sua hora reflete diretamente na quantidade de dias que você deseja tirar "férias" com
+          o valor total projeto.</h4>
+        <div class="form">
+          <input id="diasFerias" type="text" name="name" placeholder="Férias" autocomplete="off" required
+            onkeypress="return apenasNumeros();" />
+        </div>
+      </div>
+
+      <div class="card-4">
+        <div class="colorcard"></div>
+        <img src="./assets/images/dinheiro.png" class="icons" />
+        <h3>Valor Total do Projeto</h3>
+        <h4> O principal fator que é o total a ser recebido pelo freela. A partir desse valor, do quanto você desejaria
+          ganhar em cima do trabalho</h4>
+        <div class="form">
+          <input id="valorProjeto" type="text" name="name" placeholder="Valor Total" autocomplete="off" required
+            onkeypress="return apenasNumeros();" />
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!--Fim da página-->
+  <footer>
+    <button class="btn-2" type="submit" onclick="calcular()">CALCULAR</Button>
+    </div>
+    <p class="resultado">Valor por hora: <span id="valorHora" onclick="calcular()"></span></p>
+  </footer>
+  <script src="assets/js/main.js"></script>
+</body>
+
+<!-- Fim da página, se você está lendo isso tenho só uma coisa a te dizer, boa noite-->
+
 </html>

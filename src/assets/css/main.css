@@ -1,0 +1,243 @@
+/* Importando fontes */
+
+@font-face {
+    font-family: Abel;
+    src: url('../fonts/Abel-Regular.ttf');
+}
+
+@font-face {
+    font-family: Roboto-Bold;
+    src: url('../fonts/Roboto-Bold.ttf');
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url('../fonts/Roboto-Regular.ttf');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fdfdfd;
+}
+
+/* Editando o TOPO */
+
+header {
+    display: flex;
+    justify-content: center;
+    height: 80px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+p {
+    color: black;
+    font-family: Roboto;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+span {
+    color: #8c14fc;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+nav ul, nav li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #727272;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+nav .active a, nav a:hover {
+    border-bottom: #8c14fc 4px solid;
+    color: #8c14fc;
+}
+
+/* Começo do Banner */
+
+section {
+    display: flex;
+    justify-content: center;
+    background-color: #8c14fc;
+    height: 300px;
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgb(221, 14, 240));
+}
+
+.container_body {
+    display: flex;
+    justify-content: space-around;
+    width: 1000px;
+}
+
+/* Alinhando Logo */
+
+.logo_body {
+    display: flex;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+/* Editando os Cards */
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 1000px;
+    height: 1200px;
+    margin-top: 40px;
+}
+
+.card-1, .card-2, .card-3, .card-4 {
+    width: 1000px;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.colorcard {
+    width: 1000px;
+    height: 35px;
+    border-radius: 2px;
+    background-color: #8c14fc;
+}
+
+/* Alinhando os Icons */
+
+.icons {
+    width: 50px;
+    height: 50px;
+    margin-top: 20px;
+    padding: 5px;
+}
+
+/* Editando textos dos Cards */
+
+h3 {
+    font-family: Helvetica;
+    font-size: 16px;
+    margin-top: 15px;
+    color: #2f2f2f;
+}
+
+h4 {
+    font-family: Abel;
+    font-size: 18px;
+    color: #727272;
+    margin-bottom: 20px;
+    margin-top: 0px;
+}
+
+/* Alinhando o Form */
+
+.form {
+    display: flex;
+    justify-content: center;
+    margin-left: 40px;
+}
+
+/* Aplicando efeitos no Inputo dos Cards */
+
+input[type=text] {
+    border: none;
+    border-bottom: 2px solid #5d5d5d;
+    padding: 5px;
+    color: #8c14fc;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+input[type=text]:focus {
+    border: none;
+    border-bottom: 4px solid #8c14fc;
+    outline: 0;
+}
+
+::-webkit-input-placeholder {
+    text-align: center;
+    color: #8c14fc;
+    font-family: Helvetica;
+    letter-spacing: 5px;
+}
+
+/* Começo do Footer */
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+/* Editando o resultado */
+
+.resultado {
+    margin-top: 30px;
+    margin-left: 50px;
+    cursor: none;
+    font-family: Helvetica;
+    font-weight: bold;
+    color: #363636;
+}
+
+/* Editando o botão do Footer */
+
+button {
+    width: 200px;
+    height: 50px;
+    margin-top: 15px;
+    font-family: Helvetica;
+    font-weight: 800;
+    font-size: 16px;
+    color: #363636;
+    border: 2px solid #8c14fc;
+    border-radius: 6px;
+    background-color: #ffffff;
+    cursor: pointer;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+button:hover {
+    outline: 0;
+    background-color: #8c14fc;
+    color: white;
+}
+
+button:focus {
+    outline: 0;
+}
