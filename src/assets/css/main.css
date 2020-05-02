@@ -165,14 +165,6 @@ h4 {
     margin-top: 0px;
 }
 
-/* Alinhando o Form */
-
-.form {
-    display: flex;
-    justify-content: center;
-    margin-left: 40px;
-}
-
 /* Aplicando efeitos no Inputo dos Cards */
 
 input[type=text] {
